@@ -1,0 +1,128 @@
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #1a1a1a;
+  color: #00ffcc;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  color: #ffcc00;
+  text-align: center;
+  padding: 30px;
+  border-bottom: 3px solid #ffcc00;
+}
+
+h1, h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px #000;
+}
+
+nav a {
+  color: #00ffcc;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+}
+
+.quest-log {
+  background: #222;
+  border: 2px solid #00ffcc;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+button {
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #ffaa00;
+}
+
+.quest {
+  background: #333;
+  border: 2px dashed #00ffcc;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+footer {
+  background: #111;
+  text-align: center;
+  padding: 10px;
+  color: #999;
+  margin-top: 40px;
+}
+
+.status {
+  background: #000;
+  color: #0f0;
+  padding: 10px;
+  font-size: 12px;
+  border: 2px solid #0f0;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* XP Bar */
+.xp-bar {
+  width: 100%;
+  background-color: #444;
+  border: 2px solid #0f0;
+  border-radius: 5px;
+  margin-top: 10px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.xp-fill {
+  background-color: limegreen;
+  height: 100%;
+  width: 0%;
+  transition: width 0.4s ease;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+body.light-mode header,
+body.light-mode footer {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+body.light-mode .quest-level {
+  background: #fff;
+  border-color: #333;
+}
+
+body.light-mode .xp-bar {
+  border-color: #333;
+}
+
+body.light-mode .xp-fill {
+  background: #00aaff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');

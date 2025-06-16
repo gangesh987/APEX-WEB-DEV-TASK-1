@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gangesh's Dev Quest</title>
+  <link rel="stylesheet" href="game2.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>🧙‍♂️ Gangesh's Dev Quest</h1>
+    <p>Level up through coding challenges and adventures!</p>
+    <nav class="navbar">
+      <a href="#level1">Level 1</a>
+      <a href="#level2">Level 2</a>
+      <a href="#level3">Level 3</a>
+    </nav>
+    <button id="themeToggle">🌙 Toggle Theme</button>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <h2>Welcome, Dev Apprentice!</h2>
+      <p>Embark on your coding journey. 🗺️</p>
+      <button onclick="startQuest()">🎮 Start Quest</button>
+      <p id="questMsg"></p>
+    </section>
+
+    <section id="level1" class="quest-level">
+      <h2>🧩 Level 1: HTML Dungeon</h2>
+      <p>Solve the riddle of broken tags and earn 50 XP.</p>
+      <button onclick="completeLevel('HTML')" id="btnHTML">Complete Level</button>
+      <p class="status" id="htmlStatus"></p>
+    </section>
+
+    <section id="level2" class="quest-level">
+      <h2>🎨 Level 2: CSS Castle</h2>
+      <p>Style the realm with Flexbox magic and earn 100 XP.</p>
+      <button onclick="completeLevel('CSS')" id="btnCSS">Complete Level</button>
+      <p class="status" id="cssStatus"></p>
+    </section>
+
+    <section id="level3" class="quest-level">
+      <h2>⚔️ Level 3: JS Battlefield</h2>
+      <p>Defeat the bug boss using JavaScript powers and win 150 XP.</p>
+      <button onclick="completeLevel('JS')" id="btnJS">Complete Level</button>
+      <p class="status" id="jsStatus"></p>
+    </section>
+
+    <section id="progress">
+      <h2>🎯 Your XP Progress</h2>
+      <div class="xp-bar">
+        <div class="xp-fill" id="xpFill">0 XP</div>
+      </div>
+      <p id="levelStatus">Level: 1</p>
+    </section>
+
+    <section id="character">
+      <h2>🧝‍♂️ Create Your Character</h2>
+      <label>Name: <input type="text" id="charName"></label><br>
+      <label>Class:
+        <select id="charClass">
+          <option>Warrior</option>
+          <option>Mage</option>
+          <option>Rogue</option>
+        </select>
+      </label>
+      <button onclick="saveCharacter()">Save Character</button>
+      <p id="charInfo"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Gangesh | APEXPLANET INTERN !</p>
+  </footer>
+
+  <script src="game3.js"></script>
+</body>
+</html>
+ 
